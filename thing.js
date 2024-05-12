@@ -8,9 +8,7 @@ const config = { childList: true, subtree: true };
 const callback = function(mutationsList, observer) {
     for(const mutation of mutationsList) {
         if (mutation.type === 'childList') {
-            console.log('A child node has been added or removed.');
-            // Here you can add your logic to remove elements with z-index of 10
-            // For example:
+            alert("A child node has been added or removed.");
             const elements = document.querySelectorAll('[style="z-index: 2147483647;"]');
             elements.forEach(element => {
                 element.remove();
