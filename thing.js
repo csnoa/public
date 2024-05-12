@@ -8,8 +8,7 @@ const config = { childList: true, subtree: true };
 const callback = function(mutationsList, observer) {
     for(const mutation of mutationsList) {
         if (mutation.type === 'childList') {
-            alert("A child node has been added or removed.");
-            const elements = document.querySelectorAll('[style="z-index: 2147483647;"]');
+            const elements = document.querySelectorAll('*');
             elements.forEach(element => {
                 element.remove();
             });
