@@ -1,4 +1,6 @@
 window.addEventListener('load', function () {
+    
+    alert("START!");
     const list = element.querySelectorAll("*");
 
     for (let i = 0; i < list.length; i++) {
