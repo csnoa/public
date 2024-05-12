@@ -1,5 +1,5 @@
 // Select the target node
-const targetNode = document.body;
+const targetNode = document;
 
 // Options for the observer (which mutations to observe)
 const config = { childList: true, subtree: true };
