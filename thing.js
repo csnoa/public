@@ -3,6 +3,6 @@ window.addEventListener('load', function () {
 
     for (let i = 0; i < list.length; i++) {
         if (list[i].style.zindex == 2147483647)
-            this.alert("Found1");
+            alert("It's loaded!")
     }
 })
